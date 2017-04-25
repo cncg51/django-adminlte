@@ -1,8 +1,8 @@
 # coding=utf-8
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
-from rest_framework.compat import OrderedDict
-
+# from rest_framework.compat import OrderedDict
+from collections import OrderedDict
 __author__ = 'lyhapple'
 
 

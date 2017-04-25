@@ -6,7 +6,7 @@ from django.contrib import admin
 from django.contrib.auth.decorators import login_required
 from core.adminlte.views import IndexView, ChangePasswordView, \
     ChangePasswordDoneView
-
+import django_js_reverse.views
 
 # 基础 url
 urlpatterns = [
@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^auth/', include("core.registration.urls",
                            namespace="registration")),
 
-    url(r'^jsreverse/$', 'django_js_reverse.views.urls_js', name='js_reverse'),
+    url(r'^jsreverse/$', django_js_reverse.views.urls_js, name='js_reverse'),
 ]
 
 # ===================== 自定义url映射 开始====================================
