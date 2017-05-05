@@ -9,5 +9,5 @@ class AdminLteAppConfig(AppConfig):
     verbose_name = u"系统管理"
 
     def ready(self):
-        import serializers
+        from core.adminlte import serializers
         pass

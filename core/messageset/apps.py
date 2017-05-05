@@ -9,5 +9,5 @@ class MessageAppConfig(AppConfig):
     verbose_name = u"消息中心"
 
     def ready(self):
-        import serializers
+        from core.messageset import serializers
         pass

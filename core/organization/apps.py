@@ -10,7 +10,7 @@ class OrganizationAppConfig(AppConfig):
     verbose_name = u"组织机构"
 
     def ready(self):
-        import serializers
+        from core.organization import serializers
         pass
 
 
